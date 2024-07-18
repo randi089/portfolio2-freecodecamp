@@ -5,6 +5,22 @@
 .jumbotron {
   padding-top: 6rem;
   background-color: var(--bg);
+  height: 100vh;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  z-index: 1;
 }
 
 section {
@@ -30,5 +46,16 @@ footer {
     a {
       text-decoration: none;
     }
+  }
+}
+
+/* Media Query ketika di mobile */
+@media (max-width: 576px) {
+  .btn-github {
+    width: 90%;
+  }
+
+  .navbar {
+    background-color: #000 !important;
   }
 }
